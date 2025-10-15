@@ -1,0 +1,9 @@
+[	hooks.enter]
+	shell = "bash"
+	script = "source \"{{ config_root }}/.1pass.sh\""
+
+[	hooks.leave]
+	shell = "bash"
+	script = "source \"{{ config_root }}/.1pass.sh\" unset"
+
+
